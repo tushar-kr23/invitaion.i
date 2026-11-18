@@ -1,0 +1,588 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#3b0713">
+<title>शुभ मांगलिक अवसर | पर्व एवं पार्थ सिंह</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --wine: #3b0713;
+  --gold: #d7b46a;
+  --cream: #fff8e9;
+  --ink: #4a1820;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #26040c;
+  color: var(--ink);
+  font-family: "Noto Serif Devanagari", serif;
+}
+
+.page {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  background: var(--cream);
+  overflow: hidden;
+}
+
+section {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 60px 24px;
+  text-align: center;
+  position: relative;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border: 1px solid #c99f55;
+  pointer-events: none;
+}
+
+.inner {
+  width: 100%;
+  max-width: 490px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero {
+  color: var(--cream);
+  background: linear-gradient(145deg,#350711,#761e2c,#30040d);
+}
+
+.hero::before {
+  inset: 20px;
+  border: 2px solid var(--gold);
+}
+
+.eyebrow {
+  color: var(--gold);
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.ornament {
+  color: var(--gold);
+  font-size: 23px;
+  margin: 20px 0;
+}
+
+.ganesh {
+  width: 140px;
+  height: 140px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 30px auto;
+  font-size: 65px;
+  color: var(--gold);
+  background: #54121e;
+  box-shadow: 0 0 35px #d7b46a44;
+}
+
+h1 {
+  color: #f7e5b9;
+  font-size: clamp(34px,8vw,52px);
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+.sub {
+  font-size: 20px;
+  line-height: 2;
+  color: #fff1d4;
+}
+
+.scrollhint {
+  margin-top: 40px;
+  color: var(--gold);
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  50% { transform: translateY(8px); }
+}
+
+.paper {
+  background: linear-gradient(145deg,#fffaf0,#f1dfbd);
+}
+
+.paper .inner {
+  padding: 40px 22px;
+  border: 1px solid #c79d55;
+  border-radius: 160px 160px 20px 20px;
+  background: #fffaf0;
+}
+
+h2 {
+  color: #741b2a;
+  font-size: clamp(27px,6vw,38px);
+  margin: 15px 0;
+}
+
+.lead {
+  color: #714b3d;
+  font-size: 17px;
+  line-height: 2;
+}
+
+.goldline {
+  width: 70%;
+  height: 1px;
+  margin: 25px auto;
+  background: linear-gradient(90deg,transparent,#bd9148,transparent);
+}
+
+.event {
+  margin: 18px 0;
+  padding: 22px 12px;
+  border: 1px solid #d6b878;
+  border-radius: 15px;
+  background: linear-gradient(135deg,#fffdf7,#f8edda);
+}
+
+.event .date {
+  color: #781d2b;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event p {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.names {
+  color: white;
+  background: linear-gradient(145deg,#4a0a18,#761e2c,#3a0712);
+}
+
+.nameplate {
+  margin-top: 25px;
+  padding: 40px 15px;
+  border: 1px solid var(--gold);
+  border-radius: 18px;
+  background: linear-gradient(145deg,#fff6e4,#ead2ac);
+  color: var(--ink);
+  box-shadow: 0 15px 40px #16020855;
+}
+
+.nameplate h2 {
+  font-size: clamp(30px,8vw,44px);
+}
+
+.english {
+  font-family: "Cormorant Garamond",serif;
+  font-size: 29px;
+  color: #83552e;
+}
+
+.nameplate p {
+  color: #795341;
+  line-height: 2;
+}
+
+.devotion {
+  background: radial-gradient(ellipse,#fff3d8,#e8c9a2);
+}
+
+.mata-symbol {
+  font-size: 75px;
+  margin: 25px 0;
+}
+
+.host {
+  background: linear-gradient(145deg,#f8ecd6,#e9d0a7);
+}
+
+.host .inner {
+  padding: 40px 22px;
+  border: 1px solid #c79d55;
+  border-radius: 20px;
+  background: #fffaf0;
+}
+
+.host-name {
+  color: #741b2a;
+  font-size: 34px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.invited-by {
+  margin: 30px 0;
+  padding: 20px 10px;
+  border-top: 1px solid #c49b55;
+  border-bottom: 1px solid #c49b55;
+}
+
+.invited-by span {
+  display: block;
+  color: #9a7138;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+.invited-by strong {
+  display: block;
+  color: #651525;
+  font-family: "Cormorant Garamond",serif;
+  font-size: clamp(27px,7vw,36px);
+  margin-top: 10px;
+}
+
+.footer-note {
+  color: #815b4c;
+  line-height: 2;
+  font-size: 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+button {
+  border: 1px solid var(--gold);
+  border-radius: 30px;
+  padding: 13px 20px;
+  background: linear-gradient(135deg,#f4dfa9,#c18a37);
+  color: #43101a;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+button.secondary {
+  background: transparent;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: .8s;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: var(--gold);
+  z-index: 100;
+}
+
+@media(max-width:380px) {
+  section { padding: 50px 18px; }
+  .paper .inner { padding: 35px 15px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="progress" id="progress"></div>
+
+<main class="page">
+
+<!-- SECTION 1: WELCOME -->
+
+<section class="hero">
+<div class="inner reveal">
+
+<div class="eyebrow">सप्रेम निमंत्रण</div>
+
+<div class="ornament">
+॥ ॐ श्री गणेशाय नमः ॥
+</div>
+
+<div class="ganesh">ॐ</div>
+
+<h1>शुभ मांगलिक अवसर</h1>
+
+<p class="sub">
+पर्व एवं पार्थ सिंह के<br>
+शुभ अवसर पर
+</p>
+
+<div class="scrollhint">
+नीचे स्क्रॉल करें<br>⌄
+</div>
+
+</div>
+</section>
+
+
+<!-- SECTION 2: PROGRAM DETAILS -->
+
+<section class="paper">
+<div class="inner reveal">
+
+<div class="eyebrow">॥ मंगलमय आयोजन ॥</div>
+
+<h2>कार्यक्रम विवरण</h2>
+
+<p class="lead">
+आपकी गरिमामयी उपस्थिति<br>
+हमारे लिए सौभाग्य की बात होगी।
+</p>
+
+<div class="goldline"></div>
+
+<div class="event">
+<div class="date">13 December 2026</div>
+<p>
+पूजा एवं मटकोर<br>
+<strong>शाम 5 बजे से</strong>
+</p>
+</div>
+
+<div class="event">
+<div class="date">14 December 2026</div>
+<p>
+मुंडन – <strong>सुबह 10 बजे</strong><br>
+प्रीतिभोज – <strong>रात 7 बजे</strong><br>
+माता रानी का जागरण – <strong>रात 10 बजे</strong>
+</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- SECTION 3: NAMES -->
+
+<section class="names">
+<div class="inner reveal">
+
+<div class="eyebrow">हमारे प्रिय बच्चे</div>
+
+<div class="nameplate">
+
+<div class="ornament">✦ शुभाशीष ✦</div>
+
+<h2>पर्व एवं पार्थ सिंह</h2>
+
+<div class="english">
+Parv &amp; Parth Singh
+</div>
+
+<div class="goldline"></div>
+
+<p>
+आप सभी के स्नेह और आशीर्वाद के आकांक्षी
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- SECTION 4: JAGRAN -->
+
+<section class="devotion">
+<div class="inner reveal">
+
+<div class="eyebrow">भक्ति एवं श्रद्धा</div>
+
+<div class="mata-symbol">🌺</div>
+
+<h2>माता रानी का जागरण</h2>
+
+<p class="lead">
+14 December 2026<br>
+<strong>रात 10 बजे</strong>
+</p>
+
+<div class="goldline"></div>
+
+<p class="lead">
+माता रानी के पावन जागरण में<br>
+आप सादर आमंत्रित हैं।
+</p>
+
+</div>
+</section>
+
+
+<!-- SECTION 5: INVITATION -->
+
+<section class="host">
+<div class="inner reveal">
+
+<div class="eyebrow">॥ सादर आमंत्रण ॥</div>
+
+<h2>आपकी प्रतीक्षा रहेगी</h2>
+
+<p class="lead">आमंत्रक</p>
+
+<div class="host-name">सुनीता देवी</div>
+
+<!-- INVITED BY -->
+
+<div class="invited-by">
+
+<span>INVITED BY</span>
+
+<strong>Gourav &amp; Vikas Singh</strong>
+
+</div>
+
+<div class="goldline"></div>
+
+<p class="lead">
+<strong>स्थान: निज निवास</strong>
+</p>
+
+<p class="footer-note">
+आप सभी सपरिवार<br>
+<strong>सादर आमंत्रित हैं।</strong>
+</p>
+
+<div class="actions">
+
+<button id="shareBtn">
+आमंत्रण शेयर करें ↗
+</button>
+
+<button class="secondary" onclick="goTop()">
+शुरुआत पर जाएँ ↑
+</button>
+
+</div>
+
+</div>
+</section>
+
+</main>
+
+<script>
+
+// SCROLL PROGRESS
+
+const progress = document.getElementById("progress");
+
+window.addEventListener("scroll", () => {
+
+const maxScroll =
+document.documentElement.scrollHeight - window.innerHeight;
+
+const percentage =
+maxScroll > 0 ? (window.scrollY / maxScroll) * 100 : 0;
+
+progress.style.width = percentage + "%";
+
+});
+
+
+// SCROLL ANIMATION
+
+const observer = new IntersectionObserver((entries) => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting) {
+entry.target.classList.add("visible");
+observer.unobserve(entry.target);
+}
+
+});
+
+}, {threshold: 0.12});
+
+document.querySelectorAll(".reveal").forEach(element => {
+observer.observe(element);
+});
+
+
+// GO TO TOP
+
+function goTop() {
+window.scrollTo({
+top: 0,
+behavior: "smooth"
+});
+}
+
+
+// SHARE INVITATION
+
+document.getElementById("shareBtn").addEventListener("click", async () => {
+
+const shareData = {
+title: "शुभ मांगलिक अवसर – पर्व एवं पार्थ सिंह",
+text: "पर्व एवं पार्थ सिंह के शुभ अवसर पर सादर निमंत्रण।",
+url: window.location.href
+};
+
+try {
+
+if(navigator.share) {
+
+await navigator.share(shareData);
+
+} else if(navigator.clipboard && window.isSecureContext) {
+
+await navigator.clipboard.writeText(shareData.url);
+
+alert("Invitation link copied! WhatsApp पर शेयर करें।");
+
+} else {
+
+window.prompt("Invitation link copy करें:", shareData.url);
+
+}
+
+} catch(error) {
+
+if(error.name !== "AbortError") {
+window.prompt("Invitation link copy करें:", shareData.url);
+}
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
